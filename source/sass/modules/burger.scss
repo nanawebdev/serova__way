@@ -24,6 +24,7 @@
         width: 320px;
         height: 568px;
         background-color: $basic-white;
+        z-index: 100;
     }
 
     .burger__menu--open .burger__close {

@@ -49,6 +49,10 @@
     padding-top: 6px;
 }
 
+.feedback__user-avatar {
+    border-radius: 50%;
+}
+
 @media (max-width: $tablet-width) {
     .feedback {
         position: absolute;

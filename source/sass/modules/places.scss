@@ -3,6 +3,25 @@
     width: 350px;
 }
 
+.places__link-wrapper {
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    text-align: center;
+}
+
+.places__link {
+    border: 1px solid rgba($basic-white, 0.7);
+    padding: 30px 25px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $basic-white;
+    text-decoration: none;
+}
+
 .places__list {
     list-style-type: none;
     display: flex;
@@ -14,7 +33,6 @@
 
 .places {
     padding-top: 200px;
-    padding-bottom: 25px;
 }
 
 .places__item {
@@ -108,16 +126,6 @@
 
 .places__item:hover .places__mask {
     transform: scale(1);
-}
-
-.places__mask-text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    padding: 30px 25px;
-    color: $basic-white;
-    border: 1px solid rgba($basic-white, 0.7);
 }
 
 @media (max-width: $tablet-width) {
