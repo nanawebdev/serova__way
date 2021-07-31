@@ -1,0 +1,101 @@
+.main-navigation__list {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 40px;
+    list-style-type: none;
+    margin-right: 70px;
+}
+
+.main-navigation__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $basic-black;
+    
+    &:hover {
+        color: $accent-hover;
+    }
+}
+
+.main-navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+} 
+
+.main-navigation__phone {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 15px;
+    align-items: center;
+    color: $basic-black;
+    font-size: 18px;
+    line-height: 32px;
+    
+    &:hover {
+        color: $accent-hover;
+    }
+}
+
+.main-navigation__icon {
+    stroke: #141517;
+}
+
+.main-navigation__phone:hover .main-navigation__icon {
+    stroke: $accent-hover;
+}
+
+.main-navigation__arrow-icon {
+    display: none;
+}
+
+@media (max-width: $tablet-width) {
+    .main-navigation__list {
+        display: none;
+    }
+    
+    .burger__menu--open .main-navigation__list {
+        margin-right: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        row-gap: 30px;
+        position: absolute;
+        left: 0;
+        top: 134px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .burger__menu--open .main-navigation__item {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        background-color: $light-grey;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-navigation {
+        align-items: flex-start;
+    }
+    
+    .main-navigation__phone {
+        display: none;
+    }
+    
+    .main-navigation__arrow-icon {
+        display: block;
+    }
+    
+    .main-navigation__item {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+    }
+}
+
+@media (max-width: $mobile-width) {}

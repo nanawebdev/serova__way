@@ -1,0 +1,25 @@
+.corporate-travels__text {
+    width: 320px;
+    font-size: 14px;
+    line-height: 170%;
+    color: rgba($basic-black, 0.5);
+}
+
+@media (max-width: $tablet-width) {
+    .corporate-travels {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .corporate-travels__text {
+        width: 100%;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .corporate-travels__text {
+        width: 100%;
+        margin: 0;
+    }
+}

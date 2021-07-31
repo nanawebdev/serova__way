@@ -1,0 +1,371 @@
+.price {
+    display: flex;
+    position: relative;
+    margin-top: -300px;
+    padding-bottom: 140px;
+    color: $light-black;
+}
+
+.price__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.price__subtitle {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0;
+}
+
+.price__item {
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    height: 672px;
+    width: 370px;
+    border: 3px solid rgba($light-black, 0.3);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-shrink: 0;
+    border-bottom: none b;
+}
+
+.price__item--complex {
+    margin-left: 0;
+    border-color: $accent-basic;
+}
+
+.price__item--complex .price__subtitle,
+.price__item--complex .price__price {
+    color: $accent-basic;
+}
+
+.price__item--complex .divider {
+    background-color: rgba($accent-basic, 0.5);
+}
+
+.price__item--economic .divider {
+    background-color: rgba($light-black, 0.3);
+}
+
+.price__item--economic .price__icon {
+    fill: $accent-basic;
+}
+
+.price__price {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+}
+
+.price__text {
+    margin: 0;
+    padding-bottom: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 20px;
+    // color: rgba($light-black, 0.7);
+    color: $light-black;
+}
+
+.price__item .divider {
+    height: 1px;
+    width: 100%;
+}
+
+.price__description {
+    width: 310px;
+}
+
+.price__advantages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.price__advantage {
+    display: flex;
+}
+
+.price__icon {
+    padding: 4px 0;
+    margin-right: 8px;
+    width: 22px;
+    height: 22px;
+    fill: $basic-black;
+    flex-shrink: 0;
+}
+
+.price__advantage-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: $light-black;
+}
+
+.price__button {
+    width: 100%;
+    padding: 30px 0;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    margin-top: auto;
+}
+
+.price__button:hover {
+    background-color: $accent-hover;
+}
+
+.price__title {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 90px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.price__description .divider {
+    width: 175px;
+    height: 3px;
+    background-color: $accent-basic ;
+}
+
+.price__description {
+    padding-top: 113px;
+    background-color: transparent;
+    margin-left: 90px;
+}
+
+.price__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    padding-top: 30px;
+    width: 306px;
+}
+
+.price__send-us {
+    font-weight: 500;
+    font-size: 22px;
+    color: $basic-black;
+    display: flex;
+    flex-direction: column;
+    line-height: 34px;
+    align-items: flex-end;
+    padding-top: 60px;
+}
+
+.price__link {
+    font-size: 20px;
+    line-height: 32px;
+    color: $black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    cursor: pointer;
+}
+
+.price__phone {
+    stroke: $accent-basic;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.price__text br {
+    display: none;
+}
+
+@media (max-width: $tablet-width) {
+    .price {
+        margin-top: 0;
+        padding-top: 126px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content max-content;
+        column-gap: 50px;
+        row-gap: 40px;
+    }
+    
+    .price__item:nth-of-type(1) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-left: auto;
+    }
+    
+    .price__item:nth-of-type(2) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    .price__item {
+        height: 629px;
+        width: 288px;
+        padding: 0;
+        padding-top: 30px;
+        padding-bottom: 0;
+        position: relative;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .price__button {
+        margin-bottom: 0;
+        margin-top: auto;
+    }
+    
+    .price__header {
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 11px;
+    }
+    
+    .price__description {
+        text-align: center;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        padding-top: 0;
+        width: 100%;
+        margin: 0 auto;
+        flex-grow: 1;
+    }
+    
+    .price__text {
+        text-align: center;
+        font-size: 16px;
+        line-height: 170%;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .price__text br {
+        display: block;
+    }
+    
+    .price__send-us {
+        align-items: center;
+    }
+    
+    .price__description .divider {
+        display: none;
+    }
+    
+    .price__title {
+        font-size: 30px;
+        line-height: 150%;
+    }
+    
+    .price__link {
+        color: $accent-basic;
+    }
+    
+    .price__phone {
+        display: none;
+    }
+    
+    .price.wrapper {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+    
+    .price__advantages {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    
+    .price__send-us {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .price {
+        row-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (3, max-content );
+    }
+    
+    .price__item {
+        padding-top: 25px;
+        padding: 25px 16px 0;
+    }
+    
+    .price__item:nth-of-type(1) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin: 0 auto;
+    }
+    
+    .price__item:nth-of-type(2) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        margin: 0 auto;
+    }
+    
+    .price.wrapper {
+        padding-top: 50px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 50px;
+    }
+    
+    .price__title {
+        font-size: 24px;
+    }
+    
+    .price__button {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        padding: 18px 0;
+        position: absolute;
+        bottom: -2px;
+        left: -2px;
+        width: 287px;
+        right: -2px;
+    }
+
+    .price__send-us {
+        font-size: 18px;
+        padding-top: 18px;
+        padding-bottom: 10px;
+    }
+
+    .price__link {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .price__subtitle {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .price__item .price__text {
+        line-height: 24px;
+        padding-bottom: 10px;
+    }
+
+    .price__advantages {
+        padding: 20px 0 0;
+    }
+
+    .price__advantage {
+        padding-bottom: 8px;
+    }
+}

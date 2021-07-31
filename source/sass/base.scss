@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat"),
+        url("./../fonts/Montserrat-Regular.woff") format("woff"),
+        url("./../fonts/Montserrat-Regular.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat"),
+        url("./../fonts/Montserrat-Medium.woff") format("woff"),
+        url("./../fonts/Montserrat-Medium.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat"),
+        url("./../fonts/Montserrat-SemiBold.woff") format("woff"),
+        url("./../fonts/Montserrat-SemiBold.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat"),
+        url("./../fonts/Montserrat-Bold.woff") format("woff"),
+        url("./../fonts/Montserrat-Bold.woff2") format("woff2")
+}
+
+body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: $basic-black; 
+    background-color: $basic-white;
+}
+
+.wrapper {
+    padding: 0 375px;
+}
+
+.divider {
+    width: 1px;
+    height: 189px;
+    background-color: $divider;
+    flex-shrink: 0;
+}
+
+.button {
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: $accent-basic;
+    color: $basic-white;
+    border: none;
+}
+
+@media (max-width: $tablet-width) {
+    .wrapper {
+        padding: 0 76px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .wrapper {
+        padding: 0 16px; 
+    }
+}

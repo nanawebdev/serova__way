@@ -1,0 +1,46 @@
+.burger {
+    display: none;
+}
+
+.burger__close {
+    display: none;
+}
+
+@media (max-width: $tablet-width) {
+    .burger {
+        border: none;
+        display: block;
+        height: 100%;
+        width:  72px;
+        background-color: $accent-basic;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .burger__menu--open {
+        position: relative;
+        width: 320px;
+        height: 568px;
+        background-color: $basic-white;
+    }
+
+    .burger__menu--open .burger__close {
+        width: 50px;
+        height: 52px;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-color: transparent;
+        right: 14px;
+        top: 0;
+        border: none;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .burger {
+        width: 50px;
+    }
+}
