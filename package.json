@@ -1,7 +1,9 @@
 {
   "name": "serova__way",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Аттестация Серова Анна",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
     "browser-sync": "2.26.14",
     "del": "^6.0.0",
@@ -42,11 +44,10 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^14.15.0"
+    "node": "14.15.0"
   },
   "dependencies": {
     "imagemin-webp": "^6.0.0",
-    "leaflet": "^1.7.1",
     "normalize.css": "^8.0.1"
   }
 }

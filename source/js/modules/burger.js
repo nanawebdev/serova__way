@@ -1,13 +1,18 @@
 const burgerButton = document.querySelector('.burger')
-const burgerMenu = document.querySelector('.burger__menu')
-const burgerMenuClose = document.querySelector('.burger__close')
+const menu = document.querySelector('.main-navigation__menu')
+const menuClose = document.querySelector('.main-navigation__close')
+const menuLinks = document.querySelectorAll('.main-navigation__link')
 
 function showMenu() {
-    burgerMenu.classList.add('burger__menu--open')
+    menu.classList.add('main-navigation__menu--open')
+
+    menuLinks.forEach((link) => {
+      link.addEventListener('click', hideMenu)
+    })
 }
 
 function hideMenu() {
-    burgerMenu.classList.remove('burger__menu--open')
+    menu.classList.remove('main-navigation__menu--open')
 }
 
 const onBurgerClick = () => {
@@ -19,4 +24,4 @@ const onCloseClick = () => {
 }
 
 burgerButton.addEventListener('click', onBurgerClick)
-burgerMenuClose.addEventListener('click', onCloseClick)
+menuClose.addEventListener('click', onCloseClick)

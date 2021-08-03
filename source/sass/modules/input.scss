@@ -1,0 +1,14 @@
+.input {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  position: relative;
+  color: $basic-black;
+}
+
+.input::placeholder {
+  color: $basic-black;
+}
+
+// .error-message-wrapper--show.

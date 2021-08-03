@@ -1,61 +1,86 @@
 .main-footer__title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 32px; 
-    margin: 0;
-    padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .main-footer {
-    padding-bottom: 74px ;
-    background-color: $basic-white;
-    padding-left: 375px;
-    padding-right: 375px;
-    display: flex;
-    justify-content: space-between;
+  background-color: $basic-white;
+  padding: 60px 15px 74px 15px;
+  display: grid;
+  grid-template-columns: max-content min-content max-content  min-content max-content;
+  column-gap: 4px;
+  grid-template-rows: 1fr;
+}
+
+.main-footer .divider:nth-of-type(1) {
+  grid-row: 1 / 1;
+  grid-column: 2 / 3;
+  margin-right: 57px;
+}
+
+.main-footer .divider:nth-of-type(2) {
+  grid-row: 1 / 1;
+  grid-column: 4 / 5;
+  margin-right: 48px;
 }
 
 @media (max-width: $tablet-width) {
-    .main-footer {
-        padding: 80px 21px 54px 21px;
-        display: grid;
-        grid-template-columns: 1fr max-content 1fr;
-        grid-template-rows:  max-content max-content max-content;
-        row-gap: 30px;
-    }
-    
-    .main-footer .divider:nth-of-type(1) {
-        grid-row: 1 / 1;
-        grid-column: 2 / 3;
-        margin-right: 50px;
-    }
-    
-    .main-footer .divider:nth-of-type(2) {
-        grid-row: 2 / 3;
-        grid-column: 1 / -1;
-        height: 1px;
-        width: 100%;
-    }
+  .main-footer {
+    padding: 80px 21px 54px 21px;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-rows: max-content max-content max-content;
+    row-gap: 19px;
+    column-gap: 14px;
+  }
+
+  .main-footer .divider:nth-of-type(1) {
+    grid-row: 1 / 1;
+    grid-column: 2 / 3;
+    margin-right: 35px;
+    height: 177px;
+  }
+
+  .main-footer .divider:nth-of-type(2) {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    height: 1px;
+    width: 100%;
+  }
+
+  .contacts .main-footer__title {
+    padding-bottom: 25px;
+  }
+
+  .corporate-travels .main-footer__title {
+    padding-top: 14px;
+  }
+
+  .corporate-travels__text {
+    margin: 0;
+  }
 }
 
 @media (max-width: $mobile-width) {
-    .main-footer {
-        display: flex;
-        padding: 60px 16px 26px 16px;
-        flex-direction: column;
-        row-gap: 14px;
-    }
+  .main-footer {
+    display: flex;
+    padding: 68px 16px 26px 16px;
+    flex-direction: column;
+    row-gap: 14px;
+  }
 
-    .main-footer .divider:nth-of-type(1) {
-        height: 1px;
-        width: 100%;
-    }
+  .main-footer .divider:nth-of-type(1) {
+    height: 1px;
+    width: 100%;
+  }
 
-    .main-footer__title {
-        text-align: center;
-    }
+  .main-footer__title {
+    text-align: center;
+  }
 
-    .corporate-travels .main-footer__title {
-        padding-top: 15px;
-    }
+  .corporate-travels .main-footer__title {
+    padding-top: 15px;
+  }
 }
