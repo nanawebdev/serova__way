@@ -1,0 +1,1 @@
+function setFocus(){document.querySelector(".js-focus-input").focus()}export{setFocus};

@@ -1,0 +1,1 @@
+const isEscEvent=s=>"Escape"===s.key||"Esc"===s.key;export{isEscEvent};
