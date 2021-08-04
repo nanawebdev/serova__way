@@ -129,6 +129,10 @@
   transform: scale(1);
 }
 
+// .places__item + .places__item {
+//   margin-right: 60px;
+// }
+
 @media (max-width: $tablet-width) {
   .places .divider {
     display: none;

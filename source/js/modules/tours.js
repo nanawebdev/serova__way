@@ -1,3 +1,6 @@
+import { isEscEvent } from './helpers.js'
+import { setFocus } from './set-focus.js'
+
 const controls = document.querySelectorAll('.countries__control')
 const countriesContents = document.querySelectorAll('.countries__content')
 const placesLinks = document.querySelectorAll('.places__link')
@@ -5,8 +8,6 @@ const buyTourButtons = document.querySelectorAll('.js-open-popup')
 const buyTourPopup = document.querySelector('.popup')
 const buyTourCloseButtons = document.querySelectorAll('.js-close-popup')
 const popupOverlays = document.querySelectorAll('.overlay')
-import { isEscEvent } from './helpers.js'
-import { setFocus } from './set-focus.js'
 
 function onTourPopupKeydown(evt) {
   if (isEscEvent(evt)) {

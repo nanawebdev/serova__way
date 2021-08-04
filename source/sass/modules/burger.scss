@@ -11,6 +11,10 @@
     background-color: $accent-basic;
     cursor: pointer;
   }
+
+  .no-js .burger {
+    display: none;
+  }
 }
 
 @media (max-width: $mobile-width) {

@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body class="no-js">
   <header class="main-header wrapper">
     <svg width="58" height="22" class="logo">
       <use xlink:href="./img/sprite.svg#icon-logo"></use>
@@ -79,6 +79,8 @@
 
           <source media="(max-width: 767px)" srcset="./img/promo-mobile.jpg 1x, ./img/promo-mobile@2x.jpg 2x">
           <source media="(max-width: 1023px)" srcset="./img/promo-tablet.jpg 1x, ./img/promo-tablet@2x.jpg 2x">
+
+          <source type="image/webp" srcset="./img/promo.webp 1x, ./img/promo@2x.webp 2x">
           <img src="./img/promo.jpg" srcset="./img/promo@2x.jpg 2x" alt="promo" height="860" width="1920"
             class="promo__image">
         </picture>
@@ -114,9 +116,9 @@
           <picture>
             <source type="image/webp" media="(max-width:1023px)"
               srcset="./img/greek-tablet.webp 1x, ./img/greek-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/greek.webp 1x, ./img/greek.webp 2x">
-
             <source media="(max-width:1023px)" srcset="./img/greek-tablet.jpg 1x, ./img/greek-tablet@2x.jpg 2x">
+
+            <source type="image/webp" srcset="./img/greek.webp 1x, ./img/greek.webp 2x">
             <img class="places__image" width="350" height="430" src="./img/greek.jpg" srcset="./img/greek@2x.jpg 2x"
               alt="Греция">
           </picture>
@@ -132,9 +134,8 @@
           <picture>
             <source type="image/webp" media="(max-width:1023px)"
               srcset="./img/alban-tablet.webp 1x, ./img/alban-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/alban.webp 1x, ./img/alban.webp 2x">
-
             <source media="(max-width:1023px)" srcset="./img/alban-tablet.jpg 1x, ./img/alban-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="./img/alban.webp 1x, ./img/alban.webp 2x">
             <img class="places__image" width="350" height="430" src="./img/alban.jpg" srcset="./img/alban@2x.jpg 2x"
               alt="Албания">
           </picture>
@@ -150,9 +151,8 @@
           <picture>
             <source type="image/webp" media="(max-width:1023px)"
               srcset="./img/makedon-tablet.webp 1x, ./img/makedon-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/makedon.webp 1x, ./img/makedon.webp 2x">
-
             <source media="(max-width:1023px)" srcset="./img/makedon-tablet.jpg 1x, ./img/makedon-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="./img/makedon.webp 1x, ./img/makedon.webp 2x">
             <img class="places__image" width="350" height="430" src="./img/makedon.jpg" srcset="./img/makedon@2x.jpg 2x"
               alt="Македония">
           </picture>
@@ -166,11 +166,10 @@
 
           </div>
           <picture>
-            <source type="image/webp" srcset="./img/chernog.webp 1x, ./img/chernog.webp 2x">
             <source type="image/webp" media="(max-width:1023px)"
               srcset="./img/chernog-tablet.webp 1x, ./img/chernog-tablet@2x.webp 2x">
-
             <source media="(max-width:1023px)" srcset="./img/chernog-tablet.jpg 1x, ./img/chernog-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="./img/chernog.webp 1x, ./img/chernog.webp 2x">
             <img class="places__image" width="350" height="430" src="./img/chernog.jpg" srcset="./img/chernog@2x.jpg 2x"
               alt="Черногория">
           </picture>
@@ -184,11 +183,10 @@
 
           </div>
           <picture>
-            <source type="image/webp" srcset="./img/horvat.webp 1x, ./img/horvat.webp 2x">
             <source type="image/webp" media="(max-width:1023px)"
               srcset="./img/horvat-tablet.webp 1x, ./img/horvat-tablet@2x.webp 2x">
-
             <source media="(max-width:1023px)" srcset="./img/horvat-tablet.jpg 1x, ./img/horvat-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="./img/horvat.webp 1x, ./img/horvat.webp 2x">
             <img class="places__image" width="350" height="430" src="./img/horvat.jpg" srcset="./img/horvat@2x.jpg 2x"
               alt="Хорватия">
           </picture>
@@ -229,7 +227,6 @@
         </div>
 
         <picture>
-          <source type="image/webp" srcset="./img/feedback-image-greek.webp 1x, ./img/feedback-image-greek@2x.webp 2x">
           <source type="image/webp" media="(max-width: 767px)"
             srcset="./img/feedback-image-mobile-greek.webp 1x, /img/feedback-image-mobile-greek@2x.webp 2x">
           <source type="image/webp" media="(max-width: 1023px)"
@@ -241,6 +238,7 @@
           <source media="(max-width: 1023px)"
             srcset="./img/feedback-image-tablet-greek.jpg 1x, /img/feedback-image-tablet-greek@2x.jpg 2x">
 
+          <source type="image/webp" srcset="./img/feedback-image-greek.webp 1x, ./img/feedback-image-greek@2x.webp 2x">
           <img width="430" height="596" src="./img/feedback-image-greek.jpg" srcset="./img/feedback-image-greek@2x.jpg"
             class="countries__image" alt="Греция">
         </picture>
@@ -274,18 +272,16 @@
         </div>
 
         <picture>
-          <source type="image/webp"
-            srcset="./img/feedback-image-albania.webp 1x, ./img/feedback-image-albania@2x.webp 2x">
           <source type="image/webp" media="(max-width: 767px)"
             srcset="./img/feedback-image-mobile-albania.webp 1x, /img/feedback-image-mobile-albania@2x.webp 2x">
           <source type="image/webp" media="(max-width: 1023px)"
             srcset="./img/feedback-image-tablet-albania.webp 1x, /img/feedback-image-tablet-albania@2x.webp 2x">
-
           <source media="(max-width: 767px)"
             srcset="./img/feedback-image-mobile-albania.jpg 1x, /img/feedback-image-mobile-albania@2x.jpg 2x">
           <source media="(max-width: 1023px)"
             srcset="./img/feedback-image-tablet-albania.jpg 1x, /img/feedback-image-tablet-albania@2x.jpg 2x">
-
+          <source type="image/webp"
+            srcset="./img/feedback-image-albania.webp 1x, ./img/feedback-image-albania@2x.webp 2x">
           <img width="430" height="596" src="./img/feedback-image-albania.jpg"
             srcset="./img/feedback-image-albania@2x.jpg" class="countries__image" alt="Албания">
         </picture>
@@ -318,17 +314,16 @@
         </div>
 
         <picture>
-          <source type="image/webp"
-            srcset="./img/feedback-image-makedonia.webp 1x, ./img/feedback-image-makedonia@2x.webp 2x">
           <source type="image/webp" media="(max-width: 767px)"
             srcset="./img/feedback-image-mobile-makedonia.webp 1x, /img/feedback-image-mobile-makedonia@2x.webp 2x">
           <source type="image/webp" media="(max-width: 1023px)"
             srcset="./img/feedback-image-tablet-makedonia.webp 1x, /img/feedback-image-tablet-makedonia@2x.webp 2x">
-
           <source media="(max-width: 767px)"
             srcset="./img/feedback-image-mobile-makedonia.jpg 1x, /img/feedback-image-mobile-makedonia@2x.jpg 2x">
           <source media="(max-width: 1023px)"
             srcset="./img/feedback-image-tablet-makedonia.jpg 1x, /img/feedback-image-tablet-makedonia@2x.jpg 2x">
+          <source type="image/webp"
+            srcset="./img/feedback-image-makedonia.webp 1x, ./img/feedback-image-makedonia@2x.webp 2x">
           <img width="430" height="596" src="./img/feedback-image-makedonia.jpg"
             srcset="./img/feedback-image-makedonia@2x.jpg" class="countries__image" alt="Македония">
         </picture>
@@ -353,26 +348,24 @@
       <div class="countries__content wrapper">
         <div class="countries__description">
           <h4 class="countries__title">Черногория</h4>
-              <div class="divider"></div>
-              <p class="countries__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который
-                в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом
-                длина каньона составляет 80 км. </p>
-              <button class="countries__button button js-open-popup">купить тур сейчас</button>
+          <div class="divider"></div>
+          <p class="countries__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который
+            в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом
+            длина каньона составляет 80 км. </p>
+          <button class="countries__button button js-open-popup">купить тур сейчас</button>
         </div>
 
         <picture>
-          <source type="image/webp"
-            srcset="./img/feedback-image-chernog.webp 1x, ./img/feedback-image-chernog@2x.webp 2x">
           <source type="image/webp" media="(max-width: 767px)"
             srcset="./img/feedback-image-mobile-chernog.webp 1x, /img/feedback-image-mobile-chernog@2x.webp 2x">
           <source type="image/webp" media="(max-width: 1023px)"
             srcset="./img/feedback-image-tablet-chernog.webp 1x, /img/feedback-image-tablet-chernog@2x.webp 2x">
-
           <source media="(max-width: 767px)"
             srcset="./img/feedback-image-mobile-chernog.jpg 1x, /img/feedback-image-mobile-chernog@2x.jpg 2x">
           <source media="(max-width: 1023px)"
             srcset="./img/feedback-image-tablet-chernog.jpg 1x, /img/feedback-image-tablet-chernog@2x.jpg 2x">
-
+          <source type="image/webp"
+            srcset="./img/feedback-image-chernog.webp 1x, ./img/feedback-image-chernog@2x.webp 2x">
           <img width="430" height="596" src="./img/feedback-image-chernog.jpg"
             srcset="./img/feedback-image-chernog@2x.jpg" class="countries__image" alt="Черногория">
         </picture>
@@ -405,18 +398,16 @@
         </div>
 
         <picture>
-          <source type="image/webp"
-            srcset="./img/feedback-image-horvatia.webp 1x, ./img/feedback-image-horvatia@2x.webp 2x">
           <source type="image/webp" media="(max-width: 767px)"
             srcset="./img/feedback-image-mobile-horvatia.webp 1x, /img/feedback-image-mobile-horvatia@2x.webp 2x">
           <source type="image/webp" media="(max-width: 1023px)"
             srcset="./img/feedback-image-tablet-horvatia.webp 1x, /img/feedback-image-tablet-horvatia@2x.webp 2x">
-
           <source media="(max-width: 767px)"
             srcset="./img/feedback-image-mobile-horvatia.jpg 1x, /img/feedback-image-mobile-horvatia@2x.jpg 2x">
           <source media="(max-width: 1023px)"
             srcset="./img/feedback-image-tablet-horvatia.jpg 1x, /img/feedback-image-tablet-horvatia@2x.jpg 2x">
-
+          <source type="image/webp"
+            srcset="./img/feedback-image-horvatia.webp 1x, ./img/feedback-image-horvatia@2x.webp 2x">
           <img width="430" height="596" src="./img/feedback-image-horvatia.jpg"
             srcset="./img/feedback-image-horvatia@2x.jpg" class="countries__image" alt="Хорватия">
         </picture>
@@ -543,11 +534,11 @@
     <section class="questions wrapper">
       <h3 class="visually-hidden">Форма для ваших вопросов</h3>
       <picture>
-        <source type="image/webp" srcset="./img/questions-bg@2x.webp 2x, ./img/questions-bg.webp 1x">
         <source type="image/webp" media="(max-width:1023px)"
-          srcset="./img/questions-bg-tablet.webp 1x, ./img/questions-bg-tablet@2x.webp">
-
-        <source media="(max-width:1023px)" srcset="./img/questions-bg-tablet.jpg 1x, ./img/questions-bg-tablet@2x.jpg">
+          srcset="./img/questions-bg-tablet.webp 1x, ./img/questions-bg-tablet@2x.webp 2x">
+        <source media="(max-width:1023px)"
+          srcset="./img/questions-bg-tablet.jpg 1x, ./img/questions-bg-tablet@2x.jpg 2x">
+        <source type="image/webp" srcset="./img/questions-bg@2x.webp 2x, ./img/questions-bg.webp 1x">
         <img src="./img/questions-bg.jpg" srcset="./img/questions-bg@2x.jpg" width="844" height="455"
           class="questions__image" alt="фото океана">
       </picture>
@@ -555,19 +546,19 @@
         <span class="questions__title">У Вас остались вопросы?</span>
         <p class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
 
-        <form class="questions__form form" novalidate>
+        <form class="questions__form form js-questions-form" novalidate>
           <div class="error-message-wrapper js-error-message-phone">
             <div class="questions__input-wrapper">
+              <label for="questions__phone-input" class="visually-hidden">Поле для ввода номера телефона</label>
               <input type="tel" placeholder="Введите 10 цифр номера" id="questions__phone-input"
                 class="questions__input questions__input--tel js-phone-input input" required>
-              <label for="questions__phone-input" class="visually-hidden">Поле для ввода номера телефона</label>
             </div>
           </div>
 
           <div class="error-message-wrapper js-error-message-mail">
+            <label for="questions__mail-input" class="visually-hidden">Поле для ввода адреса почты</label>
             <input type="email" placeholder="E-mail" class="questions__input js-mail-input input"
               id="questions__mail-input" required>
-            <label for="questions__mail-input" class="visually-hidden">Поле для ввода адреса почты</label>
           </div>
 
 
@@ -667,7 +658,7 @@
           </svg>
         </button>
         <span class="popup__title">Купить тур</span>
-        <form class="form" novalidate>
+        <form class="form js-buy-tour-form" novalidate>
           <div class="error-message-wrapper js-error-message-phone">
             <div class="popup__input-wrapper">
               <input type="tel" placeholder="Введите 10 цифр номера"
